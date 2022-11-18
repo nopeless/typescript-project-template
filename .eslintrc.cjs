@@ -29,7 +29,8 @@ module.exports = {
       `error`,
       `ignorePackages`,
       {
-        js: `always`,
+        js: `never`,
+        ts: `never`,
       },
     ],
 
@@ -62,7 +63,7 @@ module.exports = {
     quotes: [`error`, `backtick`],
     indent: [`off`],
     "quote-props": [`error`, `as-needed`],
-    strict: 0,
+    strict: [`off`],
     "comma-dangle": [
       `error`,
       {
@@ -75,9 +76,9 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": [
       `warn`,
       {
-        argsIgnorePattern: `^_`,
-        varsIgnorePattern: `^_`,
-        caughtErrorsIgnorePattern: `^_`,
+        argsIgnorePattern: `^_|^.$`,
+        varsIgnorePattern: `^_|^.$`,
+        caughtErrorsIgnorePattern: `^_|^.$`,
       },
     ],
 

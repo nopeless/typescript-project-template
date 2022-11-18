@@ -1,3 +1,5 @@
-console.log("hi");
+import { sayhi } from "@lib/module-a/index";
 
-export{}
+sayhi();
+
+export {};
