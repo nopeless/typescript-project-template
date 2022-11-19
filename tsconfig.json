@@ -32,14 +32,6 @@
       ]
     }
   },
-  "ts-node": {
-    "transpileOnly": true,
-    "files": true,
-    "esm": true,
-    "require": [
-      "tsconfig-paths/register"
-    ]
-  },
   "include": [
     "./lib/**/*.ts",
     "./src/**/*.ts"
